@@ -1,6 +1,10 @@
 import React from "react";
+import { useQuiz } from "../contexts/QuizContext";
 
-const Finished = ({ points, maxPoints , dispatch}) => {
+const Finished = () => {
+  const {status , points , maxPoints , dispatch} = useQuiz()
+  if(status !== "finished") return
+
   const percent = ((points / maxPoints) * 100).toFixed(2) + "%";
   return (
     <>

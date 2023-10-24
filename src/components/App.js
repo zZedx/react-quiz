@@ -1,4 +1,4 @@
-import { QuizProvider } from "../contexts/QuizContext";
+// import { QuizProvider } from "../contexts/QuizContext";
 
 import Header from "./Header";
 import Main from "./Main";

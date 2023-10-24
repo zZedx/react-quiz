@@ -15,7 +15,6 @@ import Timer from "./Timer";
 export default function App() {
 
   return (
-    <QuizProvider>
     <div className="app">
       <Header />
       <Main>
@@ -31,6 +30,5 @@ export default function App() {
           <Finished/>
       </Main>
     </div>
-    </QuizProvider>
   );
 }
